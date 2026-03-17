@@ -45,3 +45,8 @@ npm run build
 
 ## GitHub Pages notes
 The workflow builds with a repo-specific base path automatically. A small `404.html` redirect is included so deep links can still load on GitHub Pages.
+
+
+## Optional GitHub Pages workflow
+A ready-to-copy workflow lives in `deploy/github-pages-workflow.yml`.
+Move it to `.github/workflows/deploy.yml` once your GitHub token or account has permission to write workflow files.
