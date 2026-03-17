@@ -16,4 +16,12 @@ describe('App routing', () => {
     expect(screen.getByRole('heading', { name: /route every ai request through one clean control layer/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /get lifetime access/i })).toBeInTheDocument()
   })
+
+  it('renders the extended showcase sections for the demo product', () => {
+    window.history.pushState({}, '', '/products/example-ai-proxy')
+    render(<App />)
+    expect(screen.getByRole('heading', { name: /trusted by ambitious solo teams/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /frequently asked questions/i })).toBeInTheDocument()
+    expect(screen.getByText(/Compared with stitching custom marketing pages together/i)).toBeInTheDocument()
+  })
 })

@@ -50,3 +50,23 @@ The workflow builds with a repo-specific base path automatically. A small `404.h
 ## Optional GitHub Pages workflow
 A ready-to-copy workflow lives in `deploy/github-pages-workflow.yml`.
 Move it to `.github/workflows/deploy.yml` once your GitHub token or account has permission to write workflow files.
+
+
+## How to use this template
+1. Copy `src/data/products/example-ai-proxy.js` to a new file.
+2. Change the `slug`, `name`, links, CTA, features, proof, comparison, and FAQ content.
+3. Drop your screenshots or placeholder SVGs into `public/assets/products/<slug>/`.
+4. Import and export the new product in `src/data/products/index.js`.
+5. Run `npm run dev` to preview.
+6. Run `npm test` and `npm run build` before publishing.
+
+### What each block does
+- `heroImage` → the big visual at the top
+- `stats` → quick proof / key numbers
+- `socialProof` → logos + testimonial cards
+- `features` → core capabilities
+- `showcaseSections` → alternating visual product story
+- `comparison` → why your offer beats the manual alternative
+- `faqs` → objections and clarifications
+- `finalCta` → closing conversion block
+- `footer` → repo, legal, support links
